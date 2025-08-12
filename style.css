@@ -1,0 +1,37 @@
+.card {
+  font-family: Arial, sans-serif;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  width: 280px;
+  text-align: center;
+}
+
+.value {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.previous {
+  color: gray;
+  font-size: 0.9em;
+}
+
+.change {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.up {
+  color: green;
+}
+
+.down {
+  color: red;
+}
+
+.chart-container {
+  margin-top: 15px;
+  height: 60px;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "KPI Card with Trendline",
+  "organization": "VotreOrganisation",
+  "description": "Carte KPI avec valeur actuelle, valeur précédente, variation et sparkline via Chart.js",
+  "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Icons-2020.svg",
+  "company": "Votre Nom ou Organisation",
+  "supportUrl": "https://example.com",
+  "privacyPolicyUrl": "https://example.com/privacy",
+  "resources": {
+    "js": [
+      "https://cdn.jsdelivr.net/npm/chart.js",
+      "script.js"
+    ],
+    "css": ["style.css"]
+  },
+  "options": {
+    "dateRangeRequired": false
+  },
+  "data": {
+    "metrics": [
+      { "id": "current_value", "name": "Valeur actuelle", "type": "number" },
+      { "id": "previous_value", "name": "Valeur mois précédent", "type": "number" },
+      { "id": "trend_values", "name": "Série historique", "type": "number", "repeated": true }
+    ],
+    "dimensions": [
+      { "id": "trend_labels", "name": "Labels des points (dates ou périodes)", "type": "text", "repeated": true }
+    ]
+  }
+}
